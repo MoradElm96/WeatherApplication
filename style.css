@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: #7C83FD; /*#1cb698*/
+    --color-fondo1:#252a2e;
+    --color-fondo2:#1e2326;
+    --color-fuente: #fff;
+    --color-barraSkill:#131517;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+
+    width: 35rem;
+    height: 45rem;
+    border: 2px solid var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+
+    -webkit-box-shadow: 7px 7px 5px 0px var(--color-principal);
+    -moz-box-shadow: 7px 7px 5px 0px var(--color-principal);
+    box-shadow: 7px 7px 5px 0px var(--color-principal);
+
+
+
+
+}
+
+/*fondos de pantalla segun la hora, lo hara el javascript*/
+.container.day{
+    background-image: url("./img/day.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container.night{
+    background-image: url("./img/night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inputTemp{
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.4;/*40% del container*/
+}
+
+.search_submit{
+    display: flex;
+}
+
+.search_submit > button{
+    visibility: hidden;
+}
+
+.search{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.inputTemp_number{
+    display: flex;
+    align-items: center;
+
+}
+
+.inputTemp_Celsius{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+font-size: 5rem;
+}
+
+.inputTemp_symbol{
+    font-size: 3rem;
+    color: white;
+}
+
+.location{
+    flex: 0.5;/*50% de la altura*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.location_date{
+    margin: 1.5rem;
+}
+.inputTemp_description, .location_city{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color:#333;
+}
+/*si tenemos la foto night los colores seran blancos*/
+.container.night  .inputTemp_description{
+    color:white;
+}
+.container.night .location_city{
+    color: white;
+}
+.container.night .location_date{
+    color: white;
+    font-weight: bolder;
+}
+.container.night .weather_min{
+    color: white;
+}
+.container.night .weather_max{
+    color: white;
+}
+
+
+.weather{
+    flex: 0.1;
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather_min > span{
+    font-size: 1.4rem;
+    color: blue;
+}
+
+.weather_max >span{
+    font-size: 1.4rem;
+    color: tomato;
+}
+
+
+.container.day  .inputTemp_description{
+    color:w;
+}
+.container.day .location_city{
+    color: white;
+}
+.container.day .location_date{
+    color: white;
+}
