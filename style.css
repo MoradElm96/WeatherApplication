@@ -9,6 +9,10 @@
     --color-fondo2:#1e2326;
     --color-fuente: #fff;
     --color-barraSkill:#131517;
+    background-image: url(img/22.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body{
@@ -111,7 +115,7 @@ font-size: 5rem;
 .inputTemp_description, .location_city{
     font-size: 1.3rem;
     font-weight: bolder;
-    color:#333;
+    color:#FFF;
 }
 /*si tenemos la foto night los colores seran blancos*/
 .container.night  .inputTemp_description{
@@ -158,5 +162,11 @@ font-size: 5rem;
     color: white;
 }
 .container.day .location_date{
+    color: white;
+}
+.container.day .weather_min{
+    color: white;
+}
+.container.day .weather_max{
     color: white;
 }
